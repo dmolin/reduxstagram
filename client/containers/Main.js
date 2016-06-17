@@ -5,6 +5,7 @@ import Main from '../components/Main'
 
 function mapStateToProps(state) {
   return {
+    processing: state.app.processing,
     posts: state.posts,
     comments: state.comments
   }

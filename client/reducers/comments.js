@@ -1,31 +1,17 @@
-const commentsInitialState = {}
-const commentInitialState = []
-
-function postComments(state = commentInitialState, action) {
-  const {type, postCode} = action
-  switch(type) {
-    case 'ADD_COMMENT':
-      const {author, comment} = action
-      return [...state, {text:comment, user:author}]
-    case 'REMOVE_COMMENT':
-      const {commentIndex} = action
-      return [...state.slice(0, commentIndex), ...state.slice(commentIndex+1)]
-  }
-  return state
+const initialState = {
+  processing: false
 }
 
-function comments(state = commentsInitialState, action) {
+function comments(state = {}, action) {
   const {type, postCode} = action
   switch(type) {
-    case 'ADD_COMMENT':
-    case 'REMOVE_COMMENT':
-      state = {
+    case 'ADD_COMMENT_COMPLETED':
+    case 'REMOVE_COMMENT_COMPLETED':
+      return {
         ...state,
-        [postCode]: postComments(state[postCode], action)
+        [postCode]: action.comments
       }
-      return state
   }
   return state
 }
-
 export default comments

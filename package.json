@@ -1,5 +1,5 @@
 {
-  "name": "reduxstagram",
+  "name": "learn-redux",
   "version": "1.0.0",
   "description": ":) ",
   "scripts": {
@@ -12,11 +12,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/dmolin/reduxstagram.git"
+    "url": "https://github.com/wesbos/Learn-Redux.git"
   },
-  "author": "Davide Molin",
+  "author": "Wes Bos",
   "license": "MIT",
-  "homepage": "https://github.com/dmolin/reduxstagram",
+  "homepage": "https://github.com/wesbos/Learn-Redux",
   "dependencies": {
     "css-loader": "^0.23.1",
     "express": "^4.13.4",
@@ -31,6 +31,7 @@
     "react-transform-hmr": "^1.0.4",
     "redbox-react": "^1.2.3",
     "redux": "^3.5.2",
+    "redux-saga": "^0.10.5",
     "rimraf": "^2.5.2",
     "style-loader": "^0.13.1",
     "stylus": "^0.54.5",
@@ -40,10 +41,6 @@
     "webpack-hot-middleware": "^2.10.0"
   },
   "devDependencies": {
-    "expect": "^1.18.0",
-    "expect-jsx": "^2.5.1",
-    "mocha": "^2.4.5",
-    "react-addons-test-utils": "^15.0.2",
     "babel-core": "^6.7.7",
     "babel-eslint": "^6.0.4",
     "babel-loader": "^6.2.4",
@@ -53,9 +50,13 @@
     "babel-polyfill": "^6.7.4",
     "babel-preset-es2015": "^6.6.0",
     "babel-preset-react": "^6.5.0",
+    "babel-preset-stage-2": "^6.5.0",
     "eslint": "^2.9.0",
     "eslint-plugin-babel": "^3.2.0",
-    "eslint-plugin-react": "^5.0.1"
-
+    "eslint-plugin-react": "^5.0.1",
+    "expect": "^1.18.0",
+    "expect-jsx": "^2.5.1",
+    "mocha": "^2.4.5",
+    "react-addons-test-utils": "^15.0.2"
   }
 }
