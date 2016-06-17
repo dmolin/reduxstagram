@@ -1,6 +1,6 @@
 # Reduxstagram
 
-A simple React + Redux implementation. Spin Off from a Wes Box video, with the following upgrades:
+A simple React + Redux implementation. Spin Off from a Wes Bos project, with the following upgrades:
 
 - Adding better componentisation (Containers/Components pattern)
 - Removing hard coupling between components
