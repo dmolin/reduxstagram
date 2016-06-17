@@ -1,6 +1,11 @@
-# Learn Redux
+# Reduxstagram
 
-A simple React + Redux implementation. This will be turned into a free video series once the app is totally fleshed out.
+A simple React + Redux implementation. Spin Off from a Wes Box video, with the following upgrades:
+
+- Adding better componentisation (Containers/Components pattern)
+- Removing hard coupling between components
+- Increasing delegation (each component responsible for its own data)
+- Mocking up Server side behaviour using Redux Saga
 
 ## Running
 
