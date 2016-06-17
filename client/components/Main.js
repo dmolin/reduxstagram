@@ -2,6 +2,10 @@ import React from 'react'
 import {Link} from 'react-router'
 
 class Main extends React.Component {
+  componentDidMount() {
+    this.props.loadData()  
+  }
+  
   renderSpinnerIfProcessing() {
     const {processing} = this.props
     

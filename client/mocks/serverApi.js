@@ -2,9 +2,18 @@
 
 //server-side 'image' of the data
 //this is mutable data.
+let posts = require('../data/posts').default
 let comments = require('../data/comments').default
 
 export default {
+  loadData: () => {
+    return new Promise((resolve, reject) => {
+     setTimeout(() => {
+       resolve({posts, comments})
+     }, 1000)
+    })
+  },
+
   addComment: (postCode, author, comment) => {
     return new Promise((resolve, reject) => {
       //simulate the time necessary to complete an asynchronous request

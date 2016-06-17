@@ -5,6 +5,8 @@ const initialState = {
 function comments(state = {}, action) {
   const {type, postCode} = action
   switch(type) {
+    case 'LOAD_DATA_COMPLETED':
+      return action.data.comments
     case 'ADD_COMMENT_COMPLETED':
     case 'REMOVE_COMMENT_COMPLETED':
       return {

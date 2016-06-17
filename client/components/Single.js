@@ -6,15 +6,17 @@ class Single extends React.Component {
   renderPost() {
     return this.props.post ? <Photo post={this.props.post} /> : <p>No Photo was found with the given code</p>
   }
+
   render () {
     const {post, comments} = this.props
-    
-    return (
-      <div className="single-photo">
-        {this.renderPost()}
 
-        <Comments code={post.code} comments={comments}/>
-      </div>
+    return (
+      this.props.post && this.props.comments ?
+        <div className="single-photo">
+          {this.renderPost()}
+          <Comments code={post.code} comments={comments}/>
+        </div>
+        : null
     )
   }
 }

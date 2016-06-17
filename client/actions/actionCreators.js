@@ -1,3 +1,17 @@
+// initial load
+export function loadData() {
+  return {
+    type: 'LOAD_DATA_STARTED'
+  }
+}
+
+export function loadDataCompleted(data) {
+  return {
+    type: 'LOAD_DATA_COMPLETED',
+    data
+  }
+}
+
 // increment like
 export function increment(postCode) {
   return {

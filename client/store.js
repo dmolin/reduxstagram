@@ -6,14 +6,9 @@ import createSagaMiddleware from 'redux-saga'
 import rootReducer from './reducers/index'
 import rootSaga from './actions/sagas'
 
-//these should be retrieved through the serverApi
-//since we're mocking only add/remove comment we leave them here for the moment.
-import comments from './data/comments'
-import posts from './data/posts'
-
 const defaultState = {
-  posts,
-  comments
+  posts:[],
+  comments:{}
 }
 
 const sagaMiddleware = createSagaMiddleware()
