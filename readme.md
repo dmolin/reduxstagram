@@ -7,6 +7,9 @@ A simple React + Redux implementation. Spin Off from a Wes Bos project (https://
 - Increasing delegation (each component responsible for its own data)
 - Mocking up Server side behaviour using Redux Saga
 
+Screenshot when asynchronous behaviour is happening:
+![ScreenShot](/README/processing.png?raw=true)
+
 ## Running
 
 First `npm install` to grab all the necessary dependencies. 
